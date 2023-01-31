@@ -2,10 +2,10 @@
 Homework 2, Exercise 4, Part 2
 Name: Suleyman Shouib
 Date: 2/16/23
-Description of your program: A game of "Guess the number" is played. Using random.randint, a number between 3 and a defined limit is generated
-    at random using randint() to define the upper bound. Then a random number inbetween 1 and upperBound-1 is generated to define the lower bound.
-    Given the two randomly generated bounds, an answer is randomly generated. The user then must guess the number correctly within 10 tries.
-    The users will receive hints after each guess to help them guess the number correctly.
+Description of your program: A game of "Guess the number" is played. Using random.randint, to generate random boundaries given a defined limit, this version
+    has a computer playing the game. The user's guesses are randomly generated, boundaries adjusting depending on answers from their prior guesses (i.e if the
+    computer guessed a number higher than the answer, that guess becomes the upper boundary for the computers next guess). A system is also in place to make sure
+    the computer does not guess the same number again by storing it all guesses in a list, and when a new guess is made to check the list to ensure it is unique.
 '''
 
 import random
