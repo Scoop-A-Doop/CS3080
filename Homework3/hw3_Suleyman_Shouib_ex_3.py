@@ -11,8 +11,8 @@ myInventory = {"Hand sanitizer": 10, "Soap": 6, "Kleenex": 22, "Lotion": 16, "Ra
 
 # Prints a given inventory
 def printInventory(inventory):
-    for i in inventory.items():
-        print(i)
+    for key, value in inventory.items():
+        print(str(key)+" | "+str(value))
 
 # If the item added is already in the inventory, increment the stock. Else it is unique so add it to the inventory
 def addItem(inventory, item):
