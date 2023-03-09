@@ -31,7 +31,7 @@ def triplets():
             for x in range(y):
                 # Only add the triplet IF they are a true pythagorean triplet.
                 # The generator will keep going until a true triplet is found, incrementing i in take(n,seq) until it reaches n
-                if math.sqrt((x*x) + (y*y)) == z:
+                if ((x*x) + (y*y)) == (z*z):
                     answer = (x, y, z)
                     yield answer
 
