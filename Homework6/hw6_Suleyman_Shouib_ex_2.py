@@ -24,9 +24,9 @@ def cache(func):
 
         # If a number is found in the dictionary, just return the value of the num. No need to recalculate.
         # If you want to see how long it'll take to calculate a sequence WITHOUT caching, comment out the next 2 lines.
-        #if num in cacheDictionary:
-        #    return cacheDictionary[num]
-
+        if num in cacheDictionary:
+            return cacheDictionary[num]
+            
         # Else, calculate the number and add it to the dictionary for future use
         fibSum = func(num, *args, **kwargs)
         cacheDictionary.update({num: fibSum})
