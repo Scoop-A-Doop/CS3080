@@ -1,4 +1,4 @@
-Homework 5 contains all 3 parts of my homework 4 assignment
+Homework 5 contains all 3 parts of my homework 5 assignment
 
 Part 1: I created my own iterator class that iterates through an array backwards.
 
